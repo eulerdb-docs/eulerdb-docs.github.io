@@ -31,6 +31,36 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/embeddings/gat/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/embeddings/hashgnn/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/embeddings/huggingface/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/embeddings/node2vec/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/embeddings/ollama/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/embeddings/simple/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://eulerdb-docs.github.io/api_reference/llm/gemini/</loc>
          <lastmod>2024-07-20</lastmod>
          <changefreq>daily</changefreq>
@@ -51,7 +81,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/vector_store/chroma/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://eulerdb-docs.github.io/api_reference/vector_store/faiss/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/vector_store/milvus/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/vector_store/pinecone/</loc>
          <lastmod>2024-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>

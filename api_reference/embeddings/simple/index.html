@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eulerdb-docs.github.io/api_reference/vector_store/faiss/">
+        <link rel="canonical" href="https://eulerdb-docs.github.io/api_reference/embeddings/simple/">
       
       
+        <link rel="prev" href="../ollama/">
+      
+      
+        <link rel="next" href="../huggingface/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Faiss - Euler Graph Database</title>
+        <title>Simple Embeddings - Euler Graph Database</title>
       
     
     
@@ -67,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#simple-graph-embeddings" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Faiss
+              Simple Embeddings
             
           </span>
         </div>
@@ -247,17 +256,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -271,7 +282,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             API Reference
@@ -494,17 +505,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
         
           
           <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
@@ -518,7 +531,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
             Graph Embeddings
@@ -532,7 +545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../embeddings/node2vec/" class="md-nav__link">
+      <a href="../node2vec/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -553,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../embeddings/gat/" class="md-nav__link">
+      <a href="../gat/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -574,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../embeddings/hashgnn/" class="md-nav__link">
+      <a href="../hashgnn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -595,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../embeddings/ollama/" class="md-nav__link">
+      <a href="../ollama/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -613,10 +626,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../embeddings/simple/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Simple Embeddings
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -625,6 +658,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematical-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematical Definition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mathematical Definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Embeddings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simple Embeddings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#random-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Random Initialization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-more-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create more nodes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create edges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convert-graph-into-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      convert graph into Graph
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-a-simple-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate a simple embeddings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -637,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../embeddings/huggingface/" class="md-nav__link">
+      <a href="../huggingface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -701,7 +865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faiss_db.md" class="md-nav__link">
+      <a href="../../vector_store/faiss_db.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -979,6 +1143,127 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematical-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematical Definition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mathematical Definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Embeddings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simple Embeddings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#random-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Random Initialization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-more-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create more nodes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create edges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convert-graph-into-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      convert graph into Graph
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-a-simple-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate a simple embeddings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -993,9 +1278,44 @@
                   
 
 
-  <h1>Faiss</h1>
-
-
+<h1 id="simple-graph-embeddings">Simple Graph Embeddings<a class="headerlink" href="#simple-graph-embeddings" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>Graph embeddings are a way of representing graph nodes, edges, or entire graphs as vectors in a continuous vector space. This transformation allows the application of various machine learning algorithms directly on the graph data. The goal of graph embeddings is to capture the graph's structural and relational information in a lower-dimensional space.</p>
+<h2 id="mathematical-definition">Mathematical Definition<a class="headerlink" href="#mathematical-definition" title="Permanent link">&para;</a></h2>
+<p>Given a graph ( G = (V, E) ), where ( V ) is the set of vertices and ( E ) is the set of edges, a graph embedding is a function ( f: V \rightarrow \mathbb{R}^d ) that maps each node to a ( d )-dimensional vector.</p>
+<h3 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h3>
+<p>The objective of graph embedding is to ensure that nodes that are close in the graph are also close in the embedding space. This can be mathematically formulated as minimizing the following objective function:</p>
+<p>[ \min \sum_{(u, v) \in E} \text{distance}(f(u), f(v)) ]</p>
+<p>where ( \text{distance} ) is typically the Euclidean distance between the vectors ( f(u) ) and ( f(v) ).</p>
+<h2 id="simple-embeddings">Simple Embeddings<a class="headerlink" href="#simple-embeddings" title="Permanent link">&para;</a></h2>
+<p>A simple approach to generate graph embeddings is to use random embeddings or basic aggregation techniques. One such technique is to initialize each node's embedding randomly and then optimize it using gradient descent to minimize the objective function.</p>
+<h3 id="random-initialization">Random Initialization<a class="headerlink" href="#random-initialization" title="Permanent link">&para;</a></h3>
+<p>For a graph with ( N ) nodes, initialize a matrix ( W \in \mathbb{R}^{N \times d} ) where each entry ( W_{i,j} ) is sampled from a normal distribution ( \mathcal{N}(0, \sigma^2) ).</p>
+<h3 id="optimization">Optimization<a class="headerlink" href="#optimization" title="Permanent link">&para;</a></h3>
+<p>The embeddings can be further refined using optimization techniques such as stochastic gradient descent (SGD) to minimize the objective function.</p>
+<h3 id="example-code">Example Code<a class="headerlink" href="#example-code" title="Permanent link">&para;</a></h3>
+<p>Below is an example code that demonstrates how to generate simple graph embeddings using random initialization.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.graph_api</span> <span class="kn">import</span> <span class="n">KnowledgeGraphAPI</span>
+<span class="n">api</span> <span class="o">=</span> <span class="n">KnowledgeGraphAPI</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="create-more-nodes">Create more nodes<a class="headerlink" href="#create-more-nodes" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">api</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">})</span>
+<span class="n">api</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">35</span><span class="p">})</span>
+<span class="n">api</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Charlie&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">25</span><span class="p">})</span>
+</code></pre></div>
+<h2 id="create-edges">Create edges<a class="headerlink" href="#create-edges" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">api</span><span class="o">.</span><span class="n">create_edge</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;1-2&#39;</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;knows&#39;</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;since&#39;</span><span class="p">:</span> <span class="s1">&#39;2020&#39;</span><span class="p">})</span>
+<span class="n">api</span><span class="o">.</span><span class="n">create_edge</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;2-3&#39;</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;knows&#39;</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;since&#39;</span><span class="p">:</span> <span class="s1">&#39;2018&#39;</span><span class="p">})</span>
+<span class="n">api</span><span class="o">.</span><span class="n">create_edge</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;3-1&#39;</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;knows&#39;</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;since&#39;</span><span class="p">:</span> <span class="s1">&#39;2015&#39;</span><span class="p">})</span>
+</code></pre></div>
+<h2 id="convert-graph-into-graph">convert graph into Graph <Type><a class="headerlink" href="#convert-graph-into-graph" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">network_graph</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">to_networkx</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="generate-a-simple-embeddings">Generate a simple embeddings<a class="headerlink" href="#generate-a-simple-embeddings" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">api</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">generate_embeddings</span><span class="p">(</span><span class="n">network_graph</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;simple&quot;</span><span class="p">,</span> <span class="n">dimensions</span><span class="o">=</span><span class="mi">64</span><span class="p">)</span>
+<span class="n">simple_embedding</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">get_embedding</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Simple embedding for node &#39;1&#39;:&quot;</span><span class="p">,</span> <span class="n">simple_embedding</span><span class="p">)</span>
+</code></pre></div>
 
 
 
