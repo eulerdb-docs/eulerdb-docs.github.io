@@ -31,6 +31,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/query_engine/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/chunk/gn_cluster/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/chunk/louvain_cluster/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/chunk/lp_cluster/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://eulerdb-docs.github.io/api_reference/embeddings/gat/</loc>
          <lastmod>2024-07-20</lastmod>
          <changefreq>daily</changefreq>
