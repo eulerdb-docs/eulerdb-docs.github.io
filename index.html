@@ -206,17 +206,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -226,85 +215,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Features
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick Start
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Quick Start">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-nodes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create nodes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-edges" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create edges
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generate-embeddings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate embeddings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#query-embeddings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Query embeddings
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1089,74 +999,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Features
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick Start
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Quick Start">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-nodes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create nodes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-edges" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create edges
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generate-embeddings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate embeddings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#query-embeddings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Query embeddings
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1171,19 +1013,44 @@
 
 
 <h1 id="euler-graph-database">Euler Graph Database<a class="headerlink" href="#euler-graph-database" title="Permanent link">&para;</a></h1>
-<p><img alt="Logo" src="assets/images/logo.png" /> <!-- Path to your logo --></p>
 <p><a href="https://eulerdb-docs.github.io/"><img alt="Documentation Status" src="https://img.shields.io/badge/docs-ready-brightgreen.svg" /></a>
 <a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
 <a href="https://www.python.org/"><img alt="Python Version" src="https://img.shields.io/badge/python-3.8%2B-blue.svg" /></a></p>
 <hr />
-<p>Welcome to the official documentation for the Euler Graph Database.</p>
+<h1 id="introduction-to-euler-graph-database">Introduction to Euler Graph Database<a class="headerlink" href="#introduction-to-euler-graph-database" title="Permanent link">&para;</a></h1>
+<p>The Euler Graph Database is a knowledge graph viewer that allows users to create, visualize, and manage knowledge graphs. It provides an interactive graphical user interface (GUI) for performing various operations on the knowledge graph such as adding nodes and edges, executing queries, and visualizing the graph. Additionally, it includes features like embedding, path finding, and tokenization that help you build a complete Graph-based Retrieval Augmented Generation (GraphRAG) system. You can also visualize the graphs directly from your terminal by typing <code>eulerdb</code>.</p>
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Manage nodes and edges</strong> in a graph</li>
-<li><strong>Generate embeddings</strong> using various methods</li>
-<li><strong>Store and query embeddings</strong> using FAISS</li>
+<li><strong>Interactive GUI</strong>: A user-friendly interface for managing knowledge graphs.</li>
+<li><strong>Node and Edge Management</strong>: Easily add, edit, and delete nodes and edges in your graph.</li>
+<li><strong>Query Execution</strong>: Perform complex queries to retrieve and analyze graph data.</li>
+<li><strong>Graph Visualization</strong>: Visualize your knowledge graphs to better understand the relationships and structure.</li>
+<li><strong>Embedding</strong>: Generate embeddings for nodes to facilitate advanced graph-based analysis.</li>
+<li><strong>Path Finding</strong>: Implement algorithms to find paths between nodes.</li>
+<li><strong>Tokenization</strong>: Tokenize graph data for various processing tasks.</li>
+<li><strong>GraphRAG</strong>: Build and utilize Graph-based Retrieval Augmented Generation systems.</li>
 </ul>
-<hr />
+<h2 id="building-knowledge-graphs">Building Knowledge Graphs 🌐<a class="headerlink" href="#building-knowledge-graphs" title="Permanent link">&para;</a></h2>
+<p>Using the provided classes, you can build comprehensive knowledge graphs. These graphs can help in organizing information, discovering relationships, and enhancing data analysis.</p>
+<h3 id="benefits">Benefits:<a class="headerlink" href="#benefits" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Organized Data</strong>: Represent your data in an easily understandable graph format.</li>
+<li><strong>Relationship Discovery</strong>: Identify and explore relationships between different data points.</li>
+<li><strong>Enhanced Analysis</strong>: Use graph-based analysis techniques to gain deeper insights into your data.</li>
+</ul>
+<h2 id="graphrag-graph-based-retrieval-augmented-generation">GraphRAG (Graph-based Retrieval Augmented Generation) 🚀<a class="headerlink" href="#graphrag-graph-based-retrieval-augmented-generation" title="Permanent link">&para;</a></h2>
+<p>GraphRAG is a powerful technique that leverages knowledge graphs to enhance information retrieval and generation processes. By building and utilizing knowledge graphs, GraphRAG can provide more accurate and contextually relevant information.</p>
+<h3 id="benefits_1">Benefits:<a class="headerlink" href="#benefits_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Improved Retrieval</strong>: Enhance search and retrieval processes by leveraging the structure and relationships in knowledge graphs.</li>
+<li><strong>Contextual Generation</strong>: Generate contextually relevant information based on the interconnected data within the graph.</li>
+<li><strong>Advanced Insights</strong>: Use the power of knowledge graphs to derive insights that are not possible with traditional retrieval methods.</li>
+</ul>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<p>To install Euler Graph Database, you can use the following commands:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>eulerdb
+</code></pre></div>
 <h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
 <p>To get started with the Euler Graph Database, follow these steps:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">my_graph_lib.graph_api</span> <span class="kn">import</span> <span class="n">KnowledgeGraphAPI</span>
