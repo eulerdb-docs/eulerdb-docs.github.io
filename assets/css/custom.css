@@ -1,0 +1,14 @@
+/* Custom styling for the documentation site */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+footer {
+  background: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.md-footer-copyright__highlight {
+  color: #6c757d;
+}
