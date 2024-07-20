@@ -1284,13 +1284,15 @@
 <h2 id="mathematical-definition">Mathematical Definition<a class="headerlink" href="#mathematical-definition" title="Permanent link">&para;</a></h2>
 <p>Given a graph ( G = (V, E) ), where ( V ) is the set of vertices and ( E ) is the set of edges, a graph embedding is a function ( f: V \rightarrow \mathbb{R}^d ) that maps each node to a ( d )-dimensional vector.</p>
 <h3 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h3>
-<p>The objective of graph embedding is to ensure that nodes that are close in the graph are also close in the embedding space. This can be mathematically formulated as minimizing the following objective function:</p>
-<p>[ \min \sum_{(u, v) \in E} \text{distance}(f(u), f(v)) ]</p>
-<p>where ( \text{distance} ) is typically the Euclidean distance between the vectors ( f(u) ) and ( f(v) ).</p>
+<p>The objective of graph embedding is to ensure that nodes that are close in the graph are also close in the embedding space. This can be mathematically formulated as minimizing the following objective function:
+<div class="highlight"><pre><span></span><code>\[ \min \sum_{(u, v) \in E} \text{distance}(f(u), f(v)) \]
+</code></pre></div>
+where ( \text{distance} ) is typically the Euclidean distance between the vectors ( f(u) ) and ( f(v) ).</p>
 <h2 id="simple-embeddings">Simple Embeddings<a class="headerlink" href="#simple-embeddings" title="Permanent link">&para;</a></h2>
 <p>A simple approach to generate graph embeddings is to use random embeddings or basic aggregation techniques. One such technique is to initialize each node's embedding randomly and then optimize it using gradient descent to minimize the objective function.</p>
 <h3 id="random-initialization">Random Initialization<a class="headerlink" href="#random-initialization" title="Permanent link">&para;</a></h3>
-<p>For a graph with ( N ) nodes, initialize a matrix ( W \in \mathbb{R}^{N \times d} ) where each entry ( W_{i,j} ) is sampled from a normal distribution ( \mathcal{N}(0, \sigma^2) ).</p>
+<div class="highlight"><pre><span></span><code>For a graph with \( N \) nodes, initialize a matrix \( W \in \mathbb{R}^{N \times d} \) where each entry \( W_{i,j} \) is sampled from a normal distribution \( \mathcal{N}(0, \sigma^2) \).
+</code></pre></div>
 <h3 id="optimization">Optimization<a class="headerlink" href="#optimization" title="Permanent link">&para;</a></h3>
 <p>The embeddings can be further refined using optimization techniques such as stochastic gradient descent (SGD) to minimize the objective function.</p>
 <h3 id="example-code">Example Code<a class="headerlink" href="#example-code" title="Permanent link">&para;</a></h3>

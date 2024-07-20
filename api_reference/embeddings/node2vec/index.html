@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#node2vec-graph-embeddings" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -546,6 +551,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Node2Vec Embeddings
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -556,6 +574,136 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematical-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematical Definition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mathematical Definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conditional-probability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Probability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-walks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Random Walks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Random Walks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transition-probability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transition Probability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skip-gram-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skip-Gram Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-more-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create more nodes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create edges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convert-graph-into-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      convert graph into Graph
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-node2vec-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Node2Vec Embeddings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -995,6 +1143,127 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematical-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematical Definition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mathematical Definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conditional-probability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Probability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-walks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Random Walks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Random Walks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transition-probability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transition Probability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skip-gram-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skip-Gram Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-more-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create more nodes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create edges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convert-graph-into-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      convert graph into Graph
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-node2vec-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Node2Vec Embeddings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1009,9 +1278,63 @@
                   
 
 
-  <h1>Node2Vec Embeddings</h1>
-
-
+<h1 id="node2vec-graph-embeddings">Node2Vec Graph Embeddings<a class="headerlink" href="#node2vec-graph-embeddings" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>Node2Vec is a popular algorithm for generating vector representations of nodes in a graph. It aims to capture the network structure by performing biased random walks on the graph and then applying the Skip-Gram model from natural language processing to generate node embeddings. These embeddings can be used for various downstream tasks such as node classification, link prediction, and clustering.</p>
+<h2 id="mathematical-definition">Mathematical Definition<a class="headerlink" href="#mathematical-definition" title="Permanent link">&para;</a></h2>
+<p>Given a graph ( G = (V, E) ), where ( V ) is the set of vertices and ( E ) is the set of edges, Node2Vec generates embeddings by optimizing the following objective function:
+<div class="highlight"><pre><span></span><code>\[ \max \sum_{u \in V} \sum_{v \in N_S(u)} \log \Pr(v | u) \]
+</code></pre></div>
+where ( N_S(u) ) is a set of nodes sampled from random walks starting at node ( u ), and ( \Pr(v | u) ) is the conditional probability of node ( v ) given node ( u ).</p>
+<h3 id="conditional-probability">Conditional Probability<a class="headerlink" href="#conditional-probability" title="Permanent link">&para;</a></h3>
+<p>The conditional probability ( \Pr(v | u) ) is defined using the Softmax function:
+<div class="highlight"><pre><span></span><code>\[ \Pr(v | u) = \frac{\exp(\mathbf{z}_v \cdot \mathbf{z}_u)}{\sum_{v&#39; \in V} \exp(\mathbf{z}_{v&#39;} \cdot \mathbf{z}_u)} \]
+</code></pre></div>
+where ( \mathbf{z}_u ) and ( \mathbf{z}_v ) are the embedding vectors of nodes ( u ) and ( v ), respectively.</p>
+<h2 id="random-walks">Random Walks<a class="headerlink" href="#random-walks" title="Permanent link">&para;</a></h2>
+<p>Node2Vec generates random walks to capture the graph structure. These walks are controlled by two parameters:</p>
+<ul>
+<li><strong>Return parameter ( p )</strong>: Controls the likelihood of returning to the previous node in the walk.</li>
+<li><strong>In-out parameter ( q )</strong>: Controls the likelihood of exploring outward nodes.</li>
+</ul>
+<h3 id="transition-probability">Transition Probability<a class="headerlink" href="#transition-probability" title="Permanent link">&para;</a></h3>
+<p>The transition probability from node ( t ) to node ( v ) given the previous node ( s ) is defined as:
+<div class="highlight"><pre><span></span><code>\[ \alpha_{pq}(t, v) = 
+\begin{cases} 
+1/p &amp; \text{if } d_{t,v} = 0 \\
+1 &amp; \text{if } d_{t,v} = 1 \\
+1/q &amp; \text{if } d_{t,v} = 2 
+\end{cases}
+\]
+</code></pre></div>
+where ( d_{t,v} ) is the shortest path distance between nodes ( t ) and ( v ).</p>
+<h2 id="skip-gram-model">Skip-Gram Model<a class="headerlink" href="#skip-gram-model" title="Permanent link">&para;</a></h2>
+<p>The Skip-Gram model is used to optimize the embeddings by maximizing the probability of observing a node's neighbors in random walks. The objective function is:
+<div class="highlight"><pre><span></span><code>\[ \max \sum_{u \in V} \sum_{v \in N_S(u)} \log \Pr(v | u) \]
+</code></pre></div></p>
+<h2 id="example-code">Example Code<a class="headerlink" href="#example-code" title="Permanent link">&para;</a></h2>
+<p>Below is an example code that demonstrates how to generate Node2Vec embeddings using the <code>node2vec</code> Python package.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.graph_api</span> <span class="kn">import</span> <span class="n">KnowledgeGraphAPI</span>
+<span class="n">api</span> <span class="o">=</span> <span class="n">KnowledgeGraphAPI</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="create-more-nodes">Create more nodes<a class="headerlink" href="#create-more-nodes" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">api</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">})</span>
+<span class="n">api</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">35</span><span class="p">})</span>
+<span class="n">api</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Charlie&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">25</span><span class="p">})</span>
+</code></pre></div>
+<h2 id="create-edges">Create edges<a class="headerlink" href="#create-edges" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">api</span><span class="o">.</span><span class="n">create_edge</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;1-2&#39;</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;knows&#39;</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;since&#39;</span><span class="p">:</span> <span class="s1">&#39;2020&#39;</span><span class="p">})</span>
+<span class="n">api</span><span class="o">.</span><span class="n">create_edge</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;2-3&#39;</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;knows&#39;</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;since&#39;</span><span class="p">:</span> <span class="s1">&#39;2018&#39;</span><span class="p">})</span>
+<span class="n">api</span><span class="o">.</span><span class="n">create_edge</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;3-1&#39;</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;knows&#39;</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;since&#39;</span><span class="p">:</span> <span class="s1">&#39;2015&#39;</span><span class="p">})</span>
+</code></pre></div>
+<h2 id="convert-graph-into-graph">convert graph into Graph <Type><a class="headerlink" href="#convert-graph-into-graph" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">network_graph</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">to_networkx</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="create-node2vec-embeddings">Create Node2Vec Embeddings<a class="headerlink" href="#create-node2vec-embeddings" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">api</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">generate_embeddings</span><span class="p">(</span><span class="n">network_graph</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;node2vec&quot;</span><span class="p">,</span> <span class="n">dimensions</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">walk_length</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">num_walks</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">workers</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">node2vec_embedding</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">get_embedding</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Node2Vec embedding for node &#39;1&#39;:&quot;</span><span class="p">,</span> <span class="n">node2vec_embedding</span><span class="p">)</span>
+</code></pre></div>
 
 
 
