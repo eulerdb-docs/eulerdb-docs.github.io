@@ -101,6 +101,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/readers/pdf/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/readers/text/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/readers/xlsx/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://eulerdb-docs.github.io/api_reference/vector_store/chroma/</loc>
          <lastmod>2024-07-20</lastmod>
          <changefreq>daily</changefreq>
