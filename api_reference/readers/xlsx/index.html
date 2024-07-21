@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#readxlsx" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -335,6 +340,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Xlsx Reader
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -345,6 +363,85 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arguments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialize-the-readxlsx-with-file-path-source-column-and-sheet-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialize the ReadXlsx with file path, source column, and sheet name
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#load-the-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load the documents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#print-the-loaded-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Print the loaded documents
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -916,7 +1013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../knowledge_graph.md" class="md-nav__link">
+      <a href="../../knowledge_graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -937,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../node.md" class="md-nav__link">
+      <a href="../../node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1038,6 +1135,76 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arguments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialize-the-readxlsx-with-file-path-source-column-and-sheet-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialize the ReadXlsx with file path, source column, and sheet name
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#load-the-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load the documents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#print-the-loaded-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Print the loaded documents
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1052,9 +1219,31 @@
                   
 
 
-  <h1>Xlsx Reader</h1>
-
-
+<h1 id="readxlsx">ReadXlsx<a class="headerlink" href="#readxlsx" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The <code>ReadXlsx</code> class is designed to read Excel files (<code>.xlsx</code>) and convert each row into a <code>Document</code> object. This class is part of the Euler Graph Database and extends the <code>BaseReader</code> class.</p>
+<h3 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>file_path</code> (str): Path to the Excel file to load.</li>
+<li><code>source_column</code> (Optional[str]): The column name to use as the source identifier in the metadata. If <code>None</code>, the file path will be used as the source.</li>
+<li><code>sheet_name</code> (Optional[str]): The name of the sheet to load. If <code>None</code>, the first sheet will be used.</li>
+<li><code>encoding</code> (Optional[str]): The encoding to use for reading the file. This parameter is not typically needed for Excel files.</li>
+</ul>
+<h2 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">&para;</a></h2>
+<p>Here's an example demonstrating how to use the <code>ReadXlsx</code> class:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.reader.xlsx_reader</span> <span class="kn">import</span> <span class="n">ReadXlsx</span>
+</code></pre></div>
+<h2 id="initialize-the-readxlsx-with-file-path-source-column-and-sheet-name">Initialize the ReadXlsx with file path, source column, and sheet name<a class="headerlink" href="#initialize-the-readxlsx-with-file-path-source-column-and-sheet-name" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">reader</span> <span class="o">=</span> <span class="n">ReadXlsx</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;example.xlsx&quot;</span><span class="p">,</span> <span class="n">source_column</span><span class="o">=</span><span class="s2">&quot;Source&quot;</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s2">&quot;Sheet1&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="load-the-documents">Load the documents<a class="headerlink" href="#load-the-documents" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">documents</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="print-the-loaded-documents">Print the loaded documents<a class="headerlink" href="#print-the-loaded-documents" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">documents</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">metadata</span><span class="p">)</span>
+</code></pre></div>
 
 
 

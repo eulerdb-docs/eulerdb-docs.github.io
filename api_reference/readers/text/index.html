@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#textreader" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -356,6 +361,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Text Reader
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -366,6 +384,85 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arguments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialize-the-textreader-with-file-path-encoding-and-autodetect_encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialize the TextReader with file path, encoding, and autodetect_encoding
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#load-the-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load the document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#print-the-loaded-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Print the loaded documents
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -916,7 +1013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../knowledge_graph.md" class="md-nav__link">
+      <a href="../../knowledge_graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -937,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../node.md" class="md-nav__link">
+      <a href="../../node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1038,6 +1135,76 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arguments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialize-the-textreader-with-file-path-encoding-and-autodetect_encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialize the TextReader with file path, encoding, and autodetect_encoding
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#load-the-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load the document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#print-the-loaded-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Print the loaded documents
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1052,9 +1219,30 @@
                   
 
 
-  <h1>Text Reader</h1>
-
-
+<h1 id="textreader">TextReader<a class="headerlink" href="#textreader" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The <code>TextReader</code> class is designed to read text files with specified encoding. It can optionally autodetect file encoding if the specified encoding fails. This class is part of the Euler Graph Database and extends the <code>BaseReader</code> class.</p>
+<h3 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>file_path</code> (str): Path to the file to load.</li>
+<li><code>encoding</code> (Optional[str]): File encoding to use. If <code>None</code>, the file will be loaded with the default system encoding.</li>
+<li><code>autodetect_encoding</code> (bool): Whether to try to autodetect the file encoding if the specified encoding fails. Default is <code>False</code>.</li>
+</ul>
+<h2 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">&para;</a></h2>
+<p>Here's an example demonstrating how to use the <code>TextReader</code> class:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.reader.text_reader</span> <span class="kn">import</span> <span class="n">TextReader</span>
+</code></pre></div>
+<h2 id="initialize-the-textreader-with-file-path-encoding-and-autodetect_encoding">Initialize the TextReader with file path, encoding, and autodetect_encoding<a class="headerlink" href="#initialize-the-textreader-with-file-path-encoding-and-autodetect_encoding" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">reader</span> <span class="o">=</span> <span class="n">TextReader</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;example.txt&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">,</span> <span class="n">autodetect_encoding</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="load-the-document">Load the document<a class="headerlink" href="#load-the-document" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">documents</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="print-the-loaded-documents">Print the loaded documents<a class="headerlink" href="#print-the-loaded-documents" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">documents</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">metadata</span><span class="p">)</span>
+</code></pre></div>
 
 
 
