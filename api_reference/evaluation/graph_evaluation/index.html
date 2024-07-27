@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eulerdb-docs.github.io/api_reference/chunk/louvain_cluster/">
+        <link rel="canonical" href="https://eulerdb-docs.github.io/api_reference/evaluation/graph_evaluation/">
       
       
-        <link rel="prev" href="../../readers/dataframe/">
+        <link rel="prev" href="../../llm/ollama/">
       
       
-        <link rel="next" href="../gn_cluster/">
+        <link rel="next" href="../../path_finding/dijkstra/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Louvain Cluster - Euler Graph Database</title>
+        <title>Graph Eval - Euler Graph Database</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#louvaincluster" class="md-skip">
+        <a href="#graphevaluation" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Louvain Cluster
+              Graph Eval
             
           </span>
         </div>
@@ -400,19 +400,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -426,7 +424,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Graph Tokenization
@@ -437,30 +435,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Louvain Cluster
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../chunk/louvain_cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -469,110 +447,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#arguments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Arguments
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Functions
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Functions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#encode_sentences" class="md-nav__link">
-    <span class="md-ellipsis">
-      encode_sentences
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build_graph" class="md-nav__link">
-    <span class="md-ellipsis">
-      build_graph
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#detect_communities" class="md-nav__link">
-    <span class="md-ellipsis">
-      detect_communities
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get_clusters" class="md-nav__link">
-    <span class="md-ellipsis">
-      get_clusters
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -585,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gn_cluster/" class="md-nav__link">
+      <a href="../../chunk/gn_cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -606,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lp_cluster/" class="md-nav__link">
+      <a href="../../chunk/lp_cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1055,17 +929,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
         
           
           <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
@@ -1079,7 +955,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             Evaluation
@@ -1090,10 +966,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../evaluation/graph_evaluation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Graph Eval
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1102,6 +998,101 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arguments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initialize-the-knowledge-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialize the Knowledge Graphs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-to-networkx-graphs-and-visualize" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convert to NetworkX Graphs and Visualize
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluate-the-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluate the Graphs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Output
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1348,49 +1339,40 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Functions
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Functions">
+    <nav class="md-nav" aria-label="Example Usage">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#encode_sentences" class="md-nav__link">
+  <a href="#initialize-the-knowledge-graphs" class="md-nav__link">
     <span class="md-ellipsis">
-      encode_sentences
+      Initialize the Knowledge Graphs
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#build_graph" class="md-nav__link">
+  <a href="#convert-to-networkx-graphs-and-visualize" class="md-nav__link">
     <span class="md-ellipsis">
-      build_graph
+      Convert to NetworkX Graphs and Visualize
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#detect_communities" class="md-nav__link">
+  <a href="#evaluate-the-graphs" class="md-nav__link">
     <span class="md-ellipsis">
-      detect_communities
+      Evaluate the Graphs
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#get_clusters" class="md-nav__link">
+  <a href="#example-output" class="md-nav__link">
     <span class="md-ellipsis">
-      get_clusters
+      Example Output
     </span>
   </a>
   
@@ -1416,35 +1398,41 @@
                   
 
 
-<h1 id="louvaincluster">LouvainCluster<a class="headerlink" href="#louvaincluster" title="Permanent link">&para;</a></h1>
+<h1 id="graphevaluation">GraphEvaluation<a class="headerlink" href="#graphevaluation" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>The <code>LouvainCluster</code> class is designed to detect communities in a graph using the Louvain algorithm. It extends the <code>GraphClustering</code> class.</p>
+<p>The <code>GraphEval</code> class is designed to evaluate two graphs by calculating the intersection and computing evaluation metrics such as precision, recall, and F1 score. This class is part of the Euler Graph Database and extends the <code>GraphConfig</code> class.</p>
 <h3 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>text</code> (str): The input text containing sentences to be clustered.</li>
-<li><code>resolution</code> (float): The resolution parameter for the Louvain algorithm.</li>
-<li><code>threshold</code> (float): The similarity threshold for connecting nodes in the graph.</li>
+<li><code>retrival_graph</code> (Graph): Provide a union of sparse connected graph for the retrieval of the chunks.</li>
+<li><code>response_graph</code> (Graph): Provide a graph of generated response.</li>
 </ul>
 <h2 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">&para;</a></h2>
-<p>Here's an example demonstrating how to use the <code>LouvainCluster</code> class:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.clustering</span> <span class="kn">import</span> <span class="n">LouvainCluster</span>
-
-<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Your text data here</span>
-<span class="s2">&quot;&quot;&quot;</span>
-<span class="n">clustering</span> <span class="o">=</span> <span class="n">LouvainCluster</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">resolution</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">clusters</span> <span class="o">=</span> <span class="n">clustering</span><span class="o">.</span><span class="n">get_clusters</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">clusters</span><span class="p">)</span>
+<p>Here's an example demonstrating how to use the <code>GraphEval</code> class:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.graph_evaluation</span> <span class="kn">import</span> <span class="n">GraphEval</span><span class="p">,</span> <span class="n">GraphEvaluationResponse</span>
 </code></pre></div>
-<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
-<h3 id="encode_sentences"><code>encode_sentences</code><a class="headerlink" href="#encode_sentences" title="Permanent link">&para;</a></h3>
-<p>Encodes sentences into embeddings using BERT.</p>
-<h3 id="build_graph"><code>build_graph</code><a class="headerlink" href="#build_graph" title="Permanent link">&para;</a></h3>
-<p>Builds the graph using sentence embeddings and cosine similarity.</p>
-<h3 id="detect_communities"><code>detect_communities</code><a class="headerlink" href="#detect_communities" title="Permanent link">&para;</a></h3>
-<p>Detects communities in the graph using the Louvain algorithm.</p>
-<h3 id="get_clusters"><code>get_clusters</code><a class="headerlink" href="#get_clusters" title="Permanent link">&para;</a></h3>
-<p>Returns the clusters detected in the graph as a dictionary.</p>
+<h3 id="initialize-the-knowledge-graphs">Initialize the Knowledge Graphs<a class="headerlink" href="#initialize-the-knowledge-graphs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">context_retrival_graph</span> <span class="o">=</span> <span class="n">retrival_graph</span>
+<span class="n">final_response_graph</span> <span class="o">=</span> <span class="n">response_graph</span>
+</code></pre></div>
+<h3 id="convert-to-networkx-graphs-and-visualize">Convert to NetworkX Graphs and Visualize<a class="headerlink" href="#convert-to-networkx-graphs-and-visualize" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">context_retrival_graph_x</span> <span class="o">=</span> <span class="n">context_retrival_graph</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">to_networkx</span><span class="p">()</span>
+<span class="n">final_response_graph_x</span> <span class="o">=</span> <span class="n">final_response_graph</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">to_networkx</span><span class="p">()</span>
+
+<span class="n">final_response_graph</span><span class="o">.</span><span class="n">visualize_graph</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="evaluate-the-graphs">Evaluate the Graphs<a class="headerlink" href="#evaluate-the-graphs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="n">GraphEval</span><span class="p">(</span><span class="n">context_retrival_graph_x</span><span class="p">,</span> <span class="n">final_response_graph_x</span><span class="p">)</span><span class="o">.</span><span class="n">get_evaluation</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Precision: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">eval_score</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Recall: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">eval_score</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F1 Score: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">eval_score</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="example-output">Example Output<a class="headerlink" href="#example-output" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Precision: 0.7500
+Recall: 0.6000
+F1 Score: 0.6667
+</code></pre></div>
+<p>This documentation provides an overview, argument details, and a complete example of how to use the <code>GraphEval</code> class for evaluating graph intersections and computing precision, recall, and F1 score metrics.</p>
 
 
 

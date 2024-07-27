@@ -2,142 +2,157 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://eulerdb-docs.github.io/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/installation/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/usage/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/edge/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/graph_api/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/knowledge_graph/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/node/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/query_engine/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/chunk/gn_cluster/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/chunk/louvain_cluster/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/chunk/lp_cluster/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/embeddings/gat/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/embeddings/hashgnn/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/embeddings/huggingface/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/embeddings/node2vec/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/embeddings/ollama/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/embeddings/simple/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/evaluation/graph_evaluation/</loc>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/llm/gemini/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/llm/huggingface/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/llm/ollama/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/llm/openai/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/path_finding/dijkstra/</loc>
+         <lastmod>2024-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/readers/dataframe/</loc>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/readers/pdf/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/readers/text/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/readers/xlsx/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/vector_store/chroma/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/vector_store/faiss/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/vector_store/milvus/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://eulerdb-docs.github.io/api_reference/vector_store/pinecone/</loc>
-         <lastmod>2024-07-21</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

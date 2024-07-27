@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eulerdb-docs.github.io/api_reference/chunk/louvain_cluster/">
+        <link rel="canonical" href="https://eulerdb-docs.github.io/api_reference/readers/dataframe/">
       
       
-        <link rel="prev" href="../../readers/dataframe/">
+        <link rel="prev" href="../text/">
       
       
-        <link rel="next" href="../gn_cluster/">
+        <link rel="next" href="../../chunk/louvain_cluster/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Louvain Cluster - Euler Graph Database</title>
+        <title>DataFrame Reader - Euler Graph Database</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#louvaincluster" class="md-skip">
+        <a href="#readdataframe" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Louvain Cluster
+              DataFrame Reader
             
           </span>
         </div>
@@ -273,17 +273,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
@@ -297,7 +299,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             Readers
@@ -311,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../readers/pdf/" class="md-nav__link">
+      <a href="../pdf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -332,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../readers/xlsx/" class="md-nav__link">
+      <a href="../xlsx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -353,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../readers/text/" class="md-nav__link">
+      <a href="../text/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -366,72 +368,6 @@
   
 
               
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../readers/dataframe/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    DataFrame Reader
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Graph Tokenization
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Graph Tokenization
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -453,7 +389,7 @@
           
   
   <span class="md-ellipsis">
-    Louvain Cluster
+    DataFrame Reader
   </span>
   
 
@@ -464,7 +400,7 @@
         
   
   <span class="md-ellipsis">
-    Louvain Cluster
+    DataFrame Reader
   </span>
   
 
@@ -516,6 +452,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initialize-the-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialize the DataFrame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-readdataframe-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the ReadDataFrame Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-the-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load the Documents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -529,36 +498,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#encode_sentences" class="md-nav__link">
+  <a href="#check_dataframe" class="md-nav__link">
     <span class="md-ellipsis">
-      encode_sentences
+      check_dataframe
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#build_graph" class="md-nav__link">
+  <a href="#load" class="md-nav__link">
     <span class="md-ellipsis">
-      build_graph
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#detect_communities" class="md-nav__link">
-    <span class="md-ellipsis">
-      detect_communities
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get_clusters" class="md-nav__link">
-    <span class="md-ellipsis">
-      get_clusters
+      load
     </span>
   </a>
   
@@ -578,6 +529,49 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Graph Tokenization
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Graph Tokenization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -585,7 +579,28 @@
   
   
     <li class="md-nav__item">
-      <a href="../gn_cluster/" class="md-nav__link">
+      <a href="../../chunk/louvain_cluster/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Louvain Cluster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chunk/gn_cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -606,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lp_cluster/" class="md-nav__link">
+      <a href="../../chunk/lp_cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1348,6 +1363,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initialize-the-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialize the DataFrame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-readdataframe-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the ReadDataFrame Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-the-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load the Documents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1361,36 +1409,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#encode_sentences" class="md-nav__link">
+  <a href="#check_dataframe" class="md-nav__link">
     <span class="md-ellipsis">
-      encode_sentences
+      check_dataframe
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#build_graph" class="md-nav__link">
+  <a href="#load" class="md-nav__link">
     <span class="md-ellipsis">
-      build_graph
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#detect_communities" class="md-nav__link">
-    <span class="md-ellipsis">
-      detect_communities
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get_clusters" class="md-nav__link">
-    <span class="md-ellipsis">
-      get_clusters
+      load
     </span>
   </a>
   
@@ -1416,35 +1446,43 @@
                   
 
 
-<h1 id="louvaincluster">LouvainCluster<a class="headerlink" href="#louvaincluster" title="Permanent link">&para;</a></h1>
+<h1 id="readdataframe">ReadDataFrame<a class="headerlink" href="#readdataframe" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>The <code>LouvainCluster</code> class is designed to detect communities in a graph using the Louvain algorithm. It extends the <code>GraphClustering</code> class.</p>
+<p>The <code>ReadDataFrame</code> class is designed to read a pandas DataFrame and convert each row into a <code>Document</code> object. This functionality is part of the Euler Graph Database and extends the <code>BaseReader</code> class.</p>
 <h3 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>text</code> (str): The input text containing sentences to be clustered.</li>
-<li><code>resolution</code> (float): The resolution parameter for the Louvain algorithm.</li>
-<li><code>threshold</code> (float): The similarity threshold for connecting nodes in the graph.</li>
+<li><code>dataframe</code> (pd.DataFrame): The pandas DataFrame to read from.</li>
+<li><code>source_column</code> (Optional[str]): The column in the DataFrame to use as the source metadata for each document.</li>
 </ul>
 <h2 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">&para;</a></h2>
-<p>Here's an example demonstrating how to use the <code>LouvainCluster</code> class:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.clustering</span> <span class="kn">import</span> <span class="n">LouvainCluster</span>
-
-<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Your text data here</span>
-<span class="s2">&quot;&quot;&quot;</span>
-<span class="n">clustering</span> <span class="o">=</span> <span class="n">LouvainCluster</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">resolution</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">clusters</span> <span class="o">=</span> <span class="n">clustering</span><span class="o">.</span><span class="n">get_clusters</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">clusters</span><span class="p">)</span>
+<p>Here's an example demonstrating how to use the <code>ReadDataFrame</code> class:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">euler.reader.read_dataframe</span> <span class="kn">import</span> <span class="n">ReadDataFrame</span>
+</code></pre></div>
+<h3 id="initialize-the-dataframe">Initialize the DataFrame<a class="headerlink" href="#initialize-the-dataframe" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example set of data</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Prashant&#39;</span><span class="p">,</span> <span class="s1">&#39;John&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">28</span><span class="p">,</span> <span class="mi">34</span><span class="p">],</span>
+    <span class="s1">&#39;Source&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Employee Records&#39;</span><span class="p">,</span> <span class="s1">&#39;HR Database&#39;</span><span class="p">]</span>
+<span class="p">}</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="create-the-readdataframe-instance">Create the ReadDataFrame Instance<a class="headerlink" href="#create-the-readdataframe-instance" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">reader</span> <span class="o">=</span> <span class="n">ReadDataFrame</span><span class="p">(</span><span class="n">dataframe</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">source_column</span><span class="o">=</span><span class="s2">&quot;Source&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="load-the-documents">Load the Documents<a class="headerlink" href="#load-the-documents" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">documents</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">documents</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">page_content</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">metadata</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
-<h3 id="encode_sentences"><code>encode_sentences</code><a class="headerlink" href="#encode_sentences" title="Permanent link">&para;</a></h3>
-<p>Encodes sentences into embeddings using BERT.</p>
-<h3 id="build_graph"><code>build_graph</code><a class="headerlink" href="#build_graph" title="Permanent link">&para;</a></h3>
-<p>Builds the graph using sentence embeddings and cosine similarity.</p>
-<h3 id="detect_communities"><code>detect_communities</code><a class="headerlink" href="#detect_communities" title="Permanent link">&para;</a></h3>
-<p>Detects communities in the graph using the Louvain algorithm.</p>
-<h3 id="get_clusters"><code>get_clusters</code><a class="headerlink" href="#get_clusters" title="Permanent link">&para;</a></h3>
-<p>Returns the clusters detected in the graph as a dictionary.</p>
+<h3 id="check_dataframe"><code>check_dataframe</code><a class="headerlink" href="#check_dataframe" title="Permanent link">&para;</a></h3>
+<p>The <code>check_dataframe</code> method validates that the <code>dataframe</code> attribute is a pandas DataFrame. It raises a <code>TypeError</code> if the value is not a DataFrame.</p>
+<h3 id="load"><code>load</code><a class="headerlink" href="#load" title="Permanent link">&para;</a></h3>
+<p>The <code>load</code> method reads the DataFrame and converts each row into a <code>Document</code> object. It returns a list of <code>Document</code> objects. If the DataFrame is empty, it raises a <code>ValueError</code>.</p>
+<p>This documentation provides an overview, argument details, and a complete example of how to use the <code>ReadDataFrame</code> class for converting DataFrame rows into <code>Document</code> objects.</p>
 
 
 
