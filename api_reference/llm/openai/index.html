@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#openaireader" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -907,6 +912,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    OPENAI LLM
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -917,6 +935,109 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-llmreaderfactory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using LLMReaderFactory
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes-and-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes and Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes and Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openaiconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenAIConfig
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openairesponse" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenAIResponse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openaireader_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenAIReader
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1251,6 +1372,100 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-llmreaderfactory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using LLMReaderFactory
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes-and-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes and Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes and Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openaiconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenAIConfig
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openairesponse" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenAIResponse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openaireader_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenAIReader
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1265,9 +1480,62 @@
                   
 
 
-  <h1>OPENAI LLM</h1>
+<h1 id="openaireader">OpenAIReader<a class="headerlink" href="#openaireader" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The <code>OpenAIReader</code> class is designed to interface with OpenAI's GPT-3 models to extract relationships between entities in a given text. It extends the <code>BaseLLMReader</code> class and uses the <code>openai</code> library to communicate with the API.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Install the <code>openai</code> library:
+    <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>openai
+</code></pre></div></li>
+</ol>
+<h2 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">&para;</a></h2>
+<p>Here's an example demonstrating how to use the <code>OpenAIReader</code> class:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.llm_readers</span> <span class="kn">import</span> <span class="n">OpenAIReader</span>
 
+<span class="c1"># Initialize the OpenAIReader</span>
+<span class="n">openai_reader</span> <span class="o">=</span> <span class="n">OpenAIReader</span><span class="p">(</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;your_openai_api_key_here&#39;</span><span class="p">,</span>
+    <span class="n">model_id</span><span class="o">=</span><span class="s1">&#39;text-davinci-003&#39;</span>
+<span class="p">)</span>
 
+<span class="c1"># Read text and extract relationships</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Thomas Alva Edison was an American inventor and businessman. He developed many devices in fields such as electric power generation, mass communication, sound recording, and motion pictures.&quot;&quot;&quot;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">openai_reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span> <span class="k">if</span> <span class="n">response</span> <span class="k">else</span> <span class="s2">&quot;No response received.&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="using-llmreaderfactory">Using LLMReaderFactory<a class="headerlink" href="#using-llmreaderfactory" title="Permanent link">&para;</a></h3>
+<p>The <code>LLMReaderFactory</code> class can be used to easily initialize different LLM readers, including <code>OpenAIReader</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.llm_readers</span> <span class="kn">import</span> <span class="n">LLMReaderFactory</span>
+
+<span class="c1"># Initialize the OpenAIReader using LLMReaderFactory</span>
+<span class="n">openai_reader</span> <span class="o">=</span> <span class="n">LLMReaderFactory</span><span class="o">.</span><span class="n">get_llm_reader</span><span class="p">(</span>
+    <span class="n">reader_type</span><span class="o">=</span><span class="s1">&#39;openai&#39;</span><span class="p">,</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;your_openai_api_key_here&#39;</span><span class="p">,</span>
+    <span class="n">model_id</span><span class="o">=</span><span class="s1">&#39;text-davinci-003&#39;</span>
+<span class="p">)</span>
+
+<span class="c1"># Read text and extract relationships</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Thomas Alva Edison was an American inventor and businessman. He developed many devices in fields such as electric power generation, mass communication, sound recording, and motion pictures.&quot;&quot;&quot;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">openai_reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span> <span class="k">if</span> <span class="n">response</span> <span class="k">else</span> <span class="s2">&quot;No response received.&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="classes-and-methods">Classes and Methods<a class="headerlink" href="#classes-and-methods" title="Permanent link">&para;</a></h2>
+<h3 id="openaiconfig"><code>OpenAIConfig</code><a class="headerlink" href="#openaiconfig" title="Permanent link">&para;</a></h3>
+<p>The <code>OpenAIConfig</code> class is a configuration model that holds the API key and model ID.</p>
+<p><strong>Attributes:</strong>
+- <code>api_key</code> (str): The API key for accessing the OpenAI API.
+- <code>model_id</code> (str): The model ID to use for generating responses.</p>
+<h3 id="openairesponse"><code>OpenAIResponse</code><a class="headerlink" href="#openairesponse" title="Permanent link">&para;</a></h3>
+<p>The <code>OpenAIResponse</code> class represents the response from the OpenAI API.</p>
+<p><strong>Attributes:</strong>
+- <code>text</code> (str): The response text generated by the OpenAI model.</p>
+<h3 id="openaireader_1"><code>OpenAIReader</code><a class="headerlink" href="#openaireader_1" title="Permanent link">&para;</a></h3>
+<p>The <code>OpenAIReader</code> class interfaces with OpenAI's GPT-3 models to extract relationships between entities in a given text.</p>
+<p><strong>Methods:</strong>
+- <code>__init__(self, api_key: str, model_id: str = 'text-davinci-003')</code>: Initializes the reader with the API key and model ID.
+- <code>read(self, text: str, custom_prompt: Optional[str] = None) -&gt; Optional[OpenAIResponse]</code>: Reads the text and returns the extracted relationships.</p>
+<p>This documentation provides an overview, example usage, and detailed description of the <code>OpenAIReader</code> class and its associated classes and methods.</p>
 
 
 

@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ollamareader" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -970,6 +975,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Ollama LLM
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -980,6 +998,109 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-llmreaderfactory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using LLMReaderFactory
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes-and-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes and Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes and Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ollamaconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      OllamaConfig
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ollamaresponse" class="md-nav__link">
+    <span class="md-ellipsis">
+      OllamaResponse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ollamareader_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      OllamaReader
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1251,6 +1372,100 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-llmreaderfactory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using LLMReaderFactory
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes-and-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes and Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes and Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ollamaconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      OllamaConfig
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ollamaresponse" class="md-nav__link">
+    <span class="md-ellipsis">
+      OllamaResponse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ollamareader_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      OllamaReader
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1265,9 +1480,68 @@
                   
 
 
-  <h1>Ollama LLM</h1>
+<h1 id="ollamareader">OllamaReader<a class="headerlink" href="#ollamareader" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The <code>OllamaReader</code> class is designed to interface with hosted Ollama models to extract relationships between entities in a given text. It extends the <code>BaseLLMReader</code> class and uses the <code>requests</code> library to communicate with the API.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Install the <code>requests</code> library:
+    <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>requests
+</code></pre></div></li>
+</ol>
+<h2 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">&para;</a></h2>
+<p>Here's an example demonstrating how to use the <code>OllamaReader</code> class:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.llm_readers</span> <span class="kn">import</span> <span class="n">OllamaReader</span>
 
+<span class="c1"># Initialize the OllamaReader</span>
+<span class="n">ollama_reader</span> <span class="o">=</span> <span class="n">OllamaReader</span><span class="p">(</span>
+    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://localhost:11434&quot;</span><span class="p">,</span> 
+    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;qwen2:0.5b&quot;</span><span class="p">,</span>           
+    <span class="n">temprature</span><span class="o">=</span><span class="mf">0.7</span>
+<span class="p">)</span>
 
+<span class="c1"># Read text and extract relationships</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Thomas Alva Edison was an American inventor and businessman. He developed many devices in fields such as electric power generation, mass communication, sound recording, and motion pictures.&quot;&quot;&quot;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">ollama_reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span> <span class="k">if</span> <span class="n">response</span> <span class="k">else</span> <span class="s2">&quot;No response received.&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="using-llmreaderfactory">Using LLMReaderFactory<a class="headerlink" href="#using-llmreaderfactory" title="Permanent link">&para;</a></h3>
+<p>The <code>LLMReaderFactory</code> class can be used to easily initialize different LLM readers, including <code>OllamaReader</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.llm_readers</span> <span class="kn">import</span> <span class="n">LLMReaderFactory</span>
+
+<span class="c1"># Initialize the OllamaReader using LLMReaderFactory</span>
+<span class="n">ollama_reader</span> <span class="o">=</span> <span class="n">LLMReaderFactory</span><span class="o">.</span><span class="n">get_llm_reader</span><span class="p">(</span>
+    <span class="n">reader_type</span><span class="o">=</span><span class="s1">&#39;ollama&#39;</span><span class="p">,</span>
+    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://localhost:11434&quot;</span><span class="p">,</span> 
+    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;qwen2:0.5b&quot;</span><span class="p">,</span>           
+    <span class="n">temprature</span><span class="o">=</span><span class="mf">0.7</span>
+<span class="p">)</span>
+
+<span class="c1"># Read text and extract relationships</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Thomas Alva Edison was an American inventor and businessman. He developed many devices in fields such as electric power generation, mass communication, sound recording, and motion pictures.&quot;&quot;&quot;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">ollama_reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span> <span class="k">if</span> <span class="n">response</span> <span class="k">else</span> <span class="s2">&quot;No response received.&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="classes-and-methods">Classes and Methods<a class="headerlink" href="#classes-and-methods" title="Permanent link">&para;</a></h2>
+<h3 id="ollamaconfig"><code>OllamaConfig</code><a class="headerlink" href="#ollamaconfig" title="Permanent link">&para;</a></h3>
+<p>The <code>OllamaConfig</code> class is a configuration model that holds the API base URL, model name, temperature, context window, and an optional default prompt.</p>
+<p><strong>Attributes:</strong>
+- <code>base_url</code> (str): The base URL for the hosted model.
+- <code>model</code> (str): The hosted Ollama model to use.
+- <code>temprature</code> (float): The sample temperature.
+- <code>context_window</code> (int): The maximum number of tokens in the context.
+- <code>default_prompt</code> (Optional[str]): A default prompt to use if no custom prompt is provided.</p>
+<h3 id="ollamaresponse"><code>OllamaResponse</code><a class="headerlink" href="#ollamaresponse" title="Permanent link">&para;</a></h3>
+<p>The <code>OllamaResponse</code> class represents the response from the Ollama API.</p>
+<p><strong>Attributes:</strong>
+- <code>text</code> (str): The response text generated by the Ollama model.</p>
+<h3 id="ollamareader_1"><code>OllamaReader</code><a class="headerlink" href="#ollamareader_1" title="Permanent link">&para;</a></h3>
+<p>The <code>OllamaReader</code> class interfaces with the hosted Ollama models to extract relationships between entities in a given text.</p>
+<p><strong>Methods:</strong>
+- <code>__init__(self, base_url: str, model: str, temprature: float = 0.75, default_prompt: Optional[str] = None)</code>: Initializes the reader with the base URL, model, temperature, and optional default prompt.
+- <code>read(self, text: str, custom_prompt: Optional[str] = None) -&gt; Optional[OllamaResponse]</code>: Reads the text and returns the extracted relationships.
+- <code>stream_complete(self, prompt: str, **kwargs: Any) -&gt; Optional[OllamaResponse]</code>: Sends a request to the Ollama API and processes the streamed response.</p>
+<p>This documentation provides an overview, example usage, and detailed description of the <code>OllamaReader</code> class and its associated classes and methods.</p>
 
 
 

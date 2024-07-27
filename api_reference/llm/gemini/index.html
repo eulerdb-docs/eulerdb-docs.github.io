@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gemini-llm" class="md-skip">
+        <a href="#geminiproreader" class="md-skip">
           Skip to content
         </a>
       
@@ -957,6 +957,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    GEMINI LLM
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -966,6 +977,109 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-llmreaderfactory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using LLMReaderFactory
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes-and-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes and Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes and Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#geminiconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      GeminiConfig
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geminiproresponse" class="md-nav__link">
+    <span class="md-ellipsis">
+      GeminiProResponse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geminiproreader_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      GeminiProReader
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1261,6 +1375,98 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-llmreaderfactory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using LLMReaderFactory
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes-and-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes and Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes and Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#geminiconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      GeminiConfig
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geminiproresponse" class="md-nav__link">
+    <span class="md-ellipsis">
+      GeminiProResponse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geminiproreader_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      GeminiProReader
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1274,7 +1480,56 @@
                   
 
 
-<h1 id="gemini-llm">Gemini LLM<a class="headerlink" href="#gemini-llm" title="Permanent link">&para;</a></h1>
+<h1 id="geminiproreader">GeminiProReader<a class="headerlink" href="#geminiproreader" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The <code>GeminiProReader</code> class is designed to interface with the Google Generative AI models (Gemini Pro) to extract relationships between entities in a given text. It extends the <code>BaseLLMReader</code> class and uses the <code>google-generativeai</code> library to communicate with the API.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Install the <code>google-generativeai</code> library:
+    <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>google-generativeai
+</code></pre></div></li>
+</ol>
+<h2 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">&para;</a></h2>
+<p>Here's an example demonstrating how to use the <code>GeminiProReader</code> class:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.llm_readers</span> <span class="kn">import</span> <span class="n">GeminiProReader</span>
+
+<span class="c1"># Initialize the GeminiProReader</span>
+<span class="n">gemini_reader</span> <span class="o">=</span> <span class="n">GeminiProReader</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;your_google_api_key_here&#39;</span><span class="p">)</span>
+
+<span class="c1"># Read text and extract relationships</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">gemini_reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;Example text to analyze.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">text</span> <span class="k">if</span> <span class="n">result</span> <span class="k">else</span> <span class="s2">&quot;No response received.&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="using-llmreaderfactory">Using LLMReaderFactory<a class="headerlink" href="#using-llmreaderfactory" title="Permanent link">&para;</a></h3>
+<p>The <code>LLMReaderFactory</code> class can be used to easily initialize different LLM readers, including <code>GeminiProReader</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.llm_readers</span> <span class="kn">import</span> <span class="n">LLMReaderFactory</span>
+
+<span class="c1"># Initialize the GeminiProReader using LLMReaderFactory</span>
+<span class="n">gemini_reader</span> <span class="o">=</span> <span class="n">LLMReaderFactory</span><span class="o">.</span><span class="n">get_llm_reader</span><span class="p">(</span>
+    <span class="n">reader_type</span><span class="o">=</span><span class="s1">&#39;gemini_pro&#39;</span><span class="p">,</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;your_google_api_key_here&#39;</span>
+<span class="p">)</span>
+
+<span class="c1"># Read text and extract relationships</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">gemini_reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;Example text to analyze.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">text</span> <span class="k">if</span> <span class="n">result</span> <span class="k">else</span> <span class="s2">&quot;No response received.&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="classes-and-methods">Classes and Methods<a class="headerlink" href="#classes-and-methods" title="Permanent link">&para;</a></h2>
+<h3 id="geminiconfig"><code>GeminiConfig</code><a class="headerlink" href="#geminiconfig" title="Permanent link">&para;</a></h3>
+<p>The <code>GeminiConfig</code> class is a configuration model that holds the API key and an optional default prompt.</p>
+<p><strong>Attributes:</strong>
+- <code>api_key</code> (str): The API key for accessing the Google Generative AI API.
+- <code>default_prompt</code> (Optional[str]): A default prompt to use if no custom prompt is provided.</p>
+<h3 id="geminiproresponse"><code>GeminiProResponse</code><a class="headerlink" href="#geminiproresponse" title="Permanent link">&para;</a></h3>
+<p>The <code>GeminiProResponse</code> class represents the response from the Gemini Pro API.</p>
+<p><strong>Attributes:</strong>
+- <code>text</code> (str): The response text generated by the Gemini Pro model.</p>
+<h3 id="geminiproreader_1"><code>GeminiProReader</code><a class="headerlink" href="#geminiproreader_1" title="Permanent link">&para;</a></h3>
+<p>The <code>GeminiProReader</code> class interfaces with the Google Generative AI models to extract relationships between entities in a given text.</p>
+<p><strong>Methods:</strong>
+- <code>__init__(self, api_key: str, default_prompt: Optional[str] = None)</code>: Initializes the reader with the API key and optional default prompt.
+- <code>read(self, text: str, custom_prompt: Optional[str] = None) -&gt; Optional[GeminiProResponse]</code>: Reads the text and returns the extracted relationships.</p>
+<p>This documentation provides an overview, example usage, and detailed description of the <code>GeminiProReader</code> class and its associated classes and methods.</p>
 
 
 
