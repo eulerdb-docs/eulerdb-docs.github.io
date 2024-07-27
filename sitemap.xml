@@ -6,6 +6,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://eulerdb-docs.github.io/author/</loc>
+         <lastmod>2024-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://eulerdb-docs.github.io/contributors/</loc>
+         <lastmod>2024-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://eulerdb-docs.github.io/installation/</loc>
          <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
