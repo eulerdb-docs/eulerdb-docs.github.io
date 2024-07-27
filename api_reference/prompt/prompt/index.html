@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eulerdb-docs.github.io/api_reference/readers/pdf/">
+        <link rel="canonical" href="https://eulerdb-docs.github.io/api_reference/prompt/prompt/">
       
       
-        <link rel="prev" href="../../../installation/">
+        <link rel="prev" href="../../vector_store/pinecone/">
       
       
-        <link rel="next" href="../xlsx/">
+        <link rel="next" href="../../llm/openai/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Pdf Reader - Euler Graph Database</title>
+        <title>Prompt - Euler Graph Database</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pdfreader" class="md-skip">
+        <a href="#eulerprompttemplate" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pdf Reader
+              Prompt
             
           </span>
         </div>
@@ -273,19 +273,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
@@ -299,7 +297,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             Readers
@@ -310,30 +308,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Pdf Reader
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../readers/pdf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -342,77 +320,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#arguments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Arguments
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#initialize-the-pdfreader" class="md-nav__link">
-    <span class="md-ellipsis">
-      Initialize the PDFReader
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#load-the-documents-from-the-pdf-file-with-additional-metadata" class="md-nav__link">
-    <span class="md-ellipsis">
-      Load the documents from the PDF file with additional metadata
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -425,7 +332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xlsx/" class="md-nav__link">
+      <a href="../../readers/xlsx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../text/" class="md-nav__link">
+      <a href="../../readers/text/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -467,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataframe/" class="md-nav__link">
+      <a href="../../readers/dataframe/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -895,17 +802,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -919,7 +828,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             Prompt
@@ -930,10 +839,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../prompt/prompt/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Prompt
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -942,6 +871,125 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arguments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-prompt-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Prompt Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#format" class="md-nav__link">
+    <span class="md-ellipsis">
+      format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from_template" class="md-nav__link">
+    <span class="md-ellipsis">
+      from_template
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      from_file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from_examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      from_examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1379,23 +1427,71 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#initialize-the-pdfreader" class="md-nav__link">
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-prompt-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Initialize the PDFReader
+      Custom Prompt Example
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#load-the-documents-from-the-pdf-file-with-additional-metadata" class="md-nav__link">
+  <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Load the documents from the PDF file with additional metadata
+      Functions
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#format" class="md-nav__link">
+    <span class="md-ellipsis">
+      format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from_template" class="md-nav__link">
+    <span class="md-ellipsis">
+      from_template
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      from_file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from_examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      from_examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1414,30 +1510,107 @@
                   
 
 
-<h1 id="pdfreader">PDFReader<a class="headerlink" href="#pdfreader" title="Permanent link">&para;</a></h1>
+<h1 id="eulerprompttemplate">EulerPromptTemplate<a class="headerlink" href="#eulerprompttemplate" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>The <code>PDFReader</code> class is designed to read PDF files and convert each page into a <code>Document</code> object. This class is part of the Euler Graph Database and extends the <code>BaseReader</code> class.</p>
+<p>The <code>EulerPromptTemplate</code> class is designed to create customizable prompt templates for language models. It allows users to generate prompts using either f-strings or jinja2 syntax, with a strong recommendation to use f-strings for security reasons.</p>
 <h3 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>file</code> (Path): Path to the PDF file to load.</li>
-<li><code>extra_info</code> (Optional[Dict]): Additional metadata to include with each document.</li>
+<li><code>input_variables</code> (List[str]): A list of the names of the variables the prompt template expects.</li>
+<li><code>template</code> (str): The prompt template.</li>
+<li><code>template_format</code> (Literal["f-string", "jinja2"]): The format of the prompt template. Options are: 'f-string', 'jinja2'.</li>
+<li><code>validate_template</code> (bool): Whether or not to try validating the template.</li>
 </ul>
 <h2 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">&para;</a></h2>
-<p>Here's an example demonstrating how to use the <code>PDFReader</code> class:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="kn">from</span> <span class="nn">euler.reader.pdf_reader</span> <span class="kn">import</span> <span class="n">PDFReader</span>
+<p>Here's an example demonstrating how to use the <code>EulerPromptTemplate</code> class:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.prompts.prompt</span> <span class="kn">import</span> <span class="n">EulerPromptTemplate</span>
+
+<span class="c1"># Instantiation using from_template (recommended)</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="n">EulerPromptTemplate</span><span class="o">.</span><span class="n">from_template</span><span class="p">(</span><span class="s2">&quot;Say </span><span class="si">{foo}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">formatted_prompt</span> <span class="o">=</span> <span class="n">prompt</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">foo</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">formatted_prompt</span><span class="p">)</span>  <span class="c1"># Output: Say bar</span>
 </code></pre></div>
-<h2 id="initialize-the-pdfreader">Initialize the PDFReader<a class="headerlink" href="#initialize-the-pdfreader" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">reader</span> <span class="o">=</span> <span class="n">PDFReader</span><span class="p">()</span>
+<h3 id="custom-prompt-example">Custom Prompt Example<a class="headerlink" href="#custom-prompt-example" title="Permanent link">&para;</a></h3>
+<p>You can create a custom prompt by subclassing <code>EulerPromptTemplate</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">euler.prompts.prompt</span> <span class="kn">import</span> <span class="n">EulerPromptTemplate</span>
+
+<span class="k">class</span> <span class="nc">CustomPrompt</span><span class="p">(</span><span class="n">EulerPromptTemplate</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">input_variables</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;context&quot;</span><span class="p">,</span> <span class="s2">&quot;query&quot;</span><span class="p">],</span>
+            <span class="n">template</span><span class="o">=</span><span class="s2">&quot;Give me a detailed description and use your knowledge base to return an answer in 100 words with subheading and conclusion and also add some references. If you don&#39;t know the answer, please contact the Author of LIB: Prashant Verma.</span><span class="se">\n</span><span class="s2">Context: </span><span class="si">{context}</span><span class="se">\n</span><span class="s2">Query: </span><span class="si">{query}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="n">template_format</span><span class="o">=</span><span class="s2">&quot;f-string&quot;</span>
+        <span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">ConversationalAgent</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">graph</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">graph</span> <span class="o">=</span> <span class="n">graph</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">context</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_prompt</span> <span class="o">=</span> <span class="n">CustomPrompt</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">handle_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+        <span class="n">formatted_prompt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">custom_prompt</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">context</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="p">),</span> <span class="n">query</span><span class="o">=</span><span class="n">query</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">text_data_processing</span><span class="o">.</span><span class="n">generate_response</span><span class="p">(</span><span class="n">formatted_prompt</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
 </code></pre></div>
-<h2 id="load-the-documents-from-the-pdf-file-with-additional-metadata">Load the documents from the PDF file with additional metadata<a class="headerlink" href="#load-the-documents-from-the-pdf-file-with-additional-metadata" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">documents</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;example.pdf&quot;</span><span class="p">),</span> <span class="n">extra_info</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;author&quot;</span><span class="p">:</span> <span class="s2">&quot;John Doe&quot;</span><span class="p">})</span>
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
+<h3 id="format"><code>format</code><a class="headerlink" href="#format" title="Permanent link">&para;</a></h3>
+<p>Formats the prompt with the inputs.</p>
+<p><strong>Arguments:</strong>
+- <code>kwargs</code>: Any arguments to be passed to the prompt template.</p>
+<p><strong>Returns:</strong>
+- A formatted string.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">prompt</span> <span class="o">=</span> <span class="n">EulerPromptTemplate</span><span class="o">.</span><span class="n">from_template</span><span class="p">(</span><span class="s2">&quot;Hello, </span><span class="si">{name}</span><span class="s2">!&quot;</span><span class="p">)</span>
+<span class="n">formatted_prompt</span> <span class="o">=</span> <span class="n">prompt</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">formatted_prompt</span><span class="p">)</span>  <span class="c1"># Output: Hello, Alice!</span>
 </code></pre></div>
-<h1 id="print-the-loaded-documents">#Print the loaded documents<a class="headerlink" href="#print-the-loaded-documents" title="Permanent link">&para;</a></h1>
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">documents</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">metadata</span><span class="p">)</span>
+<h3 id="from_template"><code>from_template</code><a class="headerlink" href="#from_template" title="Permanent link">&para;</a></h3>
+<p>Loads a prompt template from a template string.</p>
+<p><strong>Arguments:</strong>
+- <code>template</code> (str): The template to load.
+- <code>template_format</code> (str, optional): The format of the template. Use <code>jinja2</code> for jinja2, and <code>f-string</code> or None for f-strings.
+- <code>partial_variables</code> (Dict[str, Any], optional): A dictionary of variables that can be used to partially fill in the template.</p>
+<p><strong>Returns:</strong>
+- The prompt template loaded from the template.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">prompt</span> <span class="o">=</span> <span class="n">EulerPromptTemplate</span><span class="o">.</span><span class="n">from_template</span><span class="p">(</span><span class="s2">&quot;Hi </span><span class="si">{name}</span><span class="s2">, welcome to </span><span class="si">{place}</span><span class="s2">!&quot;</span><span class="p">)</span>
+<span class="n">formatted_prompt</span> <span class="o">=</span> <span class="n">prompt</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="n">place</span><span class="o">=</span><span class="s2">&quot;Wonderland&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">formatted_prompt</span><span class="p">)</span>  <span class="c1"># Output: Hi Alice, welcome to Wonderland!</span>
 </code></pre></div>
+<h3 id="from_file"><code>from_file</code><a class="headerlink" href="#from_file" title="Permanent link">&para;</a></h3>
+<p>Loads a prompt from a file.</p>
+<p><strong>Arguments:</strong>
+- <code>template_file</code> (Union[str, Path]): The path to the file containing the prompt template.</p>
+<p><strong>Returns:</strong>
+- The prompt loaded from the file.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">prompt</span> <span class="o">=</span> <span class="n">EulerPromptTemplate</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s2">&quot;path/to/template.txt&quot;</span><span class="p">)</span>
+<span class="n">formatted_prompt</span> <span class="o">=</span> <span class="n">prompt</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">formatted_prompt</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="from_examples"><code>from_examples</code><a class="headerlink" href="#from_examples" title="Permanent link">&para;</a></h3>
+<p>Creates a prompt template from a list of examples.</p>
+<p><strong>Arguments:</strong>
+- <code>examples</code> (List[str]): List of examples to use in the prompt.
+- <code>suffix</code> (str): String to go after the list of examples. Should generally set up the user's input.
+- <code>input_variables</code> (List[str]): A list of variable names the final prompt template will expect.
+- <code>example_separator</code> (str, optional): The separator to use in between examples. Defaults to two new line characters.
+- <code>prefix</code> (str, optional): String that should go before any examples. Generally includes examples. Default to an empty string.</p>
+<p><strong>Returns:</strong>
+- The final prompt generated.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">examples</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Example 1: </span><span class="si">{example1}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Example 2: </span><span class="si">{example2}</span><span class="s2">&quot;</span><span class="p">]</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="n">EulerPromptTemplate</span><span class="o">.</span><span class="n">from_examples</span><span class="p">(</span>
+    <span class="n">examples</span><span class="o">=</span><span class="n">examples</span><span class="p">,</span>
+    <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;Now, please provide your input.&quot;</span><span class="p">,</span>
+    <span class="n">input_variables</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;example1&quot;</span><span class="p">,</span> <span class="s2">&quot;example2&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+<span class="n">formatted_prompt</span> <span class="o">=</span> <span class="n">prompt</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">example1</span><span class="o">=</span><span class="s2">&quot;First example&quot;</span><span class="p">,</span> <span class="n">example2</span><span class="o">=</span><span class="s2">&quot;Second example&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">formatted_prompt</span><span class="p">)</span>
+</code></pre></div>
+<p>This documentation provides an overview, usage examples, and function descriptions for the <code>EulerPromptTemplate</code> class, which is designed to create customizable prompt templates for language models.</p>
 
 
 

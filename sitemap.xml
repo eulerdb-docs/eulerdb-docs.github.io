@@ -116,6 +116,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://eulerdb-docs.github.io/api_reference/prompt/prompt/</loc>
+         <lastmod>2024-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://eulerdb-docs.github.io/api_reference/readers/dataframe/</loc>
          <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
